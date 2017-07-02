@@ -14,9 +14,9 @@ namespace ViikonKouluruoka
 			InitializeComponent();
 
 			MainPage = new ViikonKouluruoka.MainPage();
-		}
+        }
 
-		protected override void OnStart ()
+        protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}
