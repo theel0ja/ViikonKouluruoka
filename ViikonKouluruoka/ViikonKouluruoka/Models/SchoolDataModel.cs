@@ -118,7 +118,14 @@ namespace ViikonKouluruoka
                     Name = "Yläkoulut ja lukiot",
                     City = "Turku",
                     Id = "turku_ylakoulut"
-                }
+                },
+                /* Espoo isn't done yet on the data server. */
+                //new SchoolDataModel
+                //{
+                //    Name = "Koulut",
+                //    City = "Espoo",
+                //    Id = "espoo_koulut"
+                //}
             };
         }
     }
