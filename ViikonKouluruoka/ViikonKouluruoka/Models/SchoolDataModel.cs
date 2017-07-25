@@ -86,16 +86,18 @@ namespace ViikonKouluruoka
         public string Title => $"{Name}, {City}";
 
         /// <summary>
-        /// Url of the data server, showing data in HTML format
-        /// </summary>
-        //public Uri HtmlUrl
-        //    => new Uri($"https://api.theel0ja.info/viikon-kouluruoka/html/{Id}?theme={ThemeName}");
-
-        /// <summary>
-        /// Url of the data server, showing data in HTML format (DEV!!!!)
+        /// Url of the data server, showing data in HTML format (Production environment)
         /// </summary>
         public Uri HtmlUrl
-            => new Uri($"http://82.128.255.83:8080/html/{Id}.php?theme={ThemeName}");
+            => new Uri($"https://api.theel0ja.info/viikon-kouluruoka/html/{Id}?theme={ThemeName}");
+
+
+
+        /// <summary>
+        /// Url of the data server, showing data in HTML format (DEVELOPMENT ENVIRONMENT!!!!)
+        /// </summary>
+        //public Uri HtmlUrl
+        //    => new Uri($"http://dev.theel0ja.info:8080/html/{Id}.php?theme={ThemeName}");
 
         /// <summary>
         /// Font size of the title (Xamarin.Forms.Label)    
