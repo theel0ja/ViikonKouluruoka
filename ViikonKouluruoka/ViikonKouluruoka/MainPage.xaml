@@ -1,36 +1,21 @@
-﻿<!--<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:ViikonKouluruoka"
-             x:Class="ViikonKouluruoka.MainPage">-->
-
-	<!--<Label Text="Welcome to Viikon kouluruoka!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />-->
-
-    <!--<WebView x:Name="primarySchoolsWebView" />-->
-
-
-
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
             xmlns:local="clr-namespace:ViikonKouluruoka"
             x:Class="ViikonKouluruoka.MainPage">
     <TabbedPage.ItemTemplate>
-            <DataTemplate>
-                <ContentPage Title="{Binding Name}">
-                    <!--<StackLayout Padding="5, 25">-->
-                        <!--<Label Text="{Binding Title}"
-                         Font="Bold,Large"
-                         HorizontalOptions="Center" />-->
-
-                        <!--<StackLayout Padding="50, 10">-->
-                        <WebView Source="{Binding HtmlUrl}" />
-                        <!--</StackLayout>-->
-                    <!--</StackLayout>-->
-                </ContentPage>
-            </DataTemplate>
-        </TabbedPage.ItemTemplate>
-    </TabbedPage>
-
-<!--</ContentPage>-->
+        <DataTemplate>
+            <ContentPage Title="{Binding Name}">
+                <StackLayout>
+                    <Label Text="{Binding Title}"
+                           FontSize="{Binding FontSize}"
+                           VerticalOptions="Start"
+                           HorizontalOptions="CenterAndExpand"
+                           /><!-- Set HorizontalOptions Left(AndExpand maybe) for UWP -->
+                    <WebView Source="{Binding HtmlUrl}"
+                             VerticalOptions="FillAndExpand"
+                             HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+            </ContentPage>
+        </DataTemplate>
+    </TabbedPage.ItemTemplate>
+</TabbedPage>
