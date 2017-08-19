@@ -94,7 +94,7 @@ namespace ViikonKouluruoka
 
 
         /// <summary>
-        /// Url of the data server, showing data in HTML format (DEVELOPMENT ENVIRONMENT!!!!)
+        /// Url of the data server, showing data in HTML format (WARNING: DEVELOPMENT ENVIRONMENT!!!!)
         /// </summary>
         //public Uri HtmlUrl
         //    => new Uri($"http://dev.theel0ja.info:8080/html/{Id}.php?theme={ThemeName}");
