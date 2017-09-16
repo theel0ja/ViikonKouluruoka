@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ViikonKouluruoka.UWP</RootNamespace>
     <AssemblyName>ViikonKouluruoka.UWP</AssemblyName>
-    <DefaultLanguage>en-US</DefaultLanguage>
+    <DefaultLanguage>fi-FI</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.15063.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
@@ -17,7 +17,11 @@
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>ViikonKouluruoka.UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>ViikonKouluruoka.UWP_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>A744FB9C3FD5CA1A9B0CEDC3F6C9521CD25329F9</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -105,6 +109,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="ViikonKouluruoka.UWP_StoreKey.pfx" />
     <None Include="ViikonKouluruoka.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +162,7 @@
     <Content Include="Assets\Wide\Wide310x150Logo.scale-150.png" />
     <Content Include="Assets\Wide\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide\Wide310x150Logo.scale-400.png" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="Properties\Default.rd.xml">
       <SubType>Designer</SubType>
     </Content>
